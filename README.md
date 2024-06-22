@@ -1,2 +1,3 @@
 # shariq-easygenerator-ts
- Technical Assessment For EasyGenerator
+
+Technical Assessment For EasyGenerator
