@@ -7,7 +7,8 @@
     "start": "http-server -p 8080",
     "format:check": "prettier -c .",
     "format:write": "prettier -w .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "run:test:headless": "npx cypress run",
+    "open:cypress-runner": "npx cypress open"
   },
   "keywords": [],
   "author": "",
