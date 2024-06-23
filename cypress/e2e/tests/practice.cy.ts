@@ -58,11 +58,15 @@ describe('This File Contains Practice Page Testcases', () => {
     cy.log('Step-1: Check that textbox should be displayed initially');
     practicePage.textbox.should('be.visible');
 
-    cy.log('Step-2: Click on the hide button and checked that textbox should not be visible');
+    cy.log(
+      'Step-2: Click on the hide button and checked that textbox should not be visible'
+    );
     practicePage.hideTextboxBtn.should('be.visible').click();
     practicePage.textbox.should('not.be.visible');
 
-    cy.log('Step-3: Click on the show button and checked that textbox should be dispalyed');
+    cy.log(
+      'Step-3: Click on the show button and checked that textbox should be dispalyed'
+    );
     practicePage.showTextboxBtn.should('be.visible').click();
     practicePage.textbox.should('be.visible');
   });
@@ -82,7 +86,7 @@ describe('This File Contains Practice Page Testcases', () => {
           cy.stub(win, 'alert').as('alert');
         });
 
-    cy.log('Step-2: Cick on alert button and validate the alert content');
+        cy.log('Step-2: Cick on alert button and validate the alert content');
         practicePage.alertBtn.click();
         cy.get('@alert').should('have.been.calledWith', alertText);
       }

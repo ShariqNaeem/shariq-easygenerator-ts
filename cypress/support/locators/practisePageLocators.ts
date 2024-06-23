@@ -13,5 +13,5 @@ export const practicePageLocators = {
   alertBtn: '#alertbtn',
   alertTextbox: '#name',
   iframe: '#courses-iframe',
-  headerContainer: '.header-container'
+  headerContainer: '.header-container',
 };

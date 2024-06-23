@@ -66,7 +66,7 @@ class PracticePage {
     this.getHoverLink(1).should('be.visible').and('contain.text', 'Reload');
   }
 
-  setOpenTabFunc(newUrl: string){
+  setOpenTabFunc(newUrl: string) {
     cy.window().then((win) => {
       win.eval(`
         function openTab() {
